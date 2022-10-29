@@ -1,0 +1,9 @@
+[package]
+name = "crudtest-front"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sycamore = { version = "0.8", features = ["suspense"] }
+gloo-net = "0.2"
+

@@ -1,0 +1,124 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16pt;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("assets/static.png");
+    background-color: midnightblue;
+    font-family: sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 22pt;
+}
+
+p {
+    font-size: 18pt;
+}
+
+.layout-center {
+    align-items: center;
+}
+
+.layout-align {
+    align-items: flex-start;
+}
+
+.layout-fill {
+    align-items: stretch;
+}
+
+.hbox, .vbox {
+    display: flex;
+    gap: 1em;
+}
+
+.hbox {
+    flex-direction: row;
+}
+
+.vbox {
+    flex-direction: column;
+}
+
+#header {
+    width: 100%;
+    background-color: black;
+    align-items: stretch;
+    padding: 10px;
+}
+
+img.logo {
+    object-fit: scale-down;
+    object-position: center;
+    max-height: 32px;
+    /*height: 48px;*/
+}
+
+div.search {
+    max-width: 60vw;
+}
+
+.search {
+    width: 100%;
+    gap: 0;
+    align-items: stretch;
+}
+
+.search > input {
+    margin: 0;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.nav {
+    gap: 0;
+    align-items: stretch;
+}
+
+.nav > * {
+    /*width: 48px;
+    height: 48px;*/
+}
+
+#body-column {
+    width: 60vw;
+    align-items: stretch;
+    gap: 2em;
+}
+
+div#composer {
+    align-items: flex-end;
+    gap: 0;
+}
+
+div.composer.hbox {
+    width: 100%;
+    justify-content: space-between;
+}
+
+textarea.composer {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+output.composer {
+    color: red;
+}
+
+button.composer {
+    padding: 0 1em;
+}
+
+div.item {
+    /*border: solid;*/
+    background-color: black;
+    padding: 1em;
+}
+
